@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="../assets/js/color-modes.js"></script>
+  <head><script src="./assets/js/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -165,13 +165,13 @@
     </div>
    
     <div class="form-check text-start my-3 p-0">
-      New register? <a href="register.html" class="text-decoration-none fw-bold">Register</a>
+      New register? <a href="register.php" class="text-decoration-none fw-bold">Register</a>
     </div>
 
     <button class="btn btn-primary w-100 py-2" type="submit">Sign In</button>
   </form>
 </main>
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="auto">
 
 <head>
-  <script src="../assets/js/color-modes.js"></script>
+  <script src="./assets/js/color-modes.js"></script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
 
 
-  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
 
@@ -120,12 +120,12 @@
     <div class="container ">
       <header class="d-flex justify-content-center py-3">
         <ul class="nav nav-pills">
-          <li class="nav-item"><a href="addproject.html" class="nav-link">Add Project</a></li>
-          <li class="nav-item"><a href="addblog.html" class="nav-link">Add Blog</a></li>
-          <li class="nav-item"><a href="viewproject.html" class="nav-link" aria-current="page">View Projects</a>
+          <li class="nav-item"><a href="addproject.php" class="nav-link">Add Project</a></li>
+          <li class="nav-item"><a href="addblog.php" class="nav-link">Add Blog</a></li>
+          <li class="nav-item"><a href="viewproject.php" class="nav-link" aria-current="page">View Projects</a>
           </li>
-          <li class="nav-item"><a href="viewblog.html" class="nav-link ">View Blogs</a></li>
-          <li class="nav-item"><a href="userlist.html" class="nav-link active">User List</a></li>
+          <li class="nav-item"><a href="viewblog.php" class="nav-link ">View Blogs</a></li>
+          <li class="nav-item"><a href="userlist.php" class="nav-link active">User List</a></li>
         </ul>
       </header>
 
@@ -232,7 +232,7 @@
   </main>
 
   <script src="./assets/js/jquery-3.2.1.min.js"></script>
-  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/dataTables.js"></script>
   <script src="./assets/js/dataTables.bootstrap5.js"></script>
 
@@ -246,3 +246,5 @@
 </body>
 
 </html>
+
+rmFhiJ0GPvvQK

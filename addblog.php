@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="auto">
 
 <head>
-  <script src="../assets/js/color-modes.js"></script>
+  <script src="./assets/js/color-modes.js"></script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     .bd-placeholder-img {
@@ -211,12 +211,12 @@
     <div class="container ">
       <header class="d-flex justify-content-center py-3">
         <ul class="nav nav-pills">
-          <li class="nav-item"><a href="addproject.html" class="nav-link active" aria-current="page">Add Project</a>
+          <li class="nav-item"><a href="addproject.php" class="nav-link" aria-current="page">Add Project</a>
           </li>
-          <li class="nav-item"><a href="addblog.html" class="nav-link">Add Blog</a></li>
-          <li class="nav-item"><a href="viewproject.html" class="nav-link">View Projects</a></li>
-          <li class="nav-item"><a href="viewblog.html" class="nav-link">View Blogs</a></li>
-          <li class="nav-item"><a href="userlist.html" class="nav-link">User List</a></li>
+          <li class="nav-item"><a href="addblog.php" class="nav-link active">Add Blog</a></li>
+          <li class="nav-item"><a href="viewproject.php" class="nav-link">View Projects</a></li>
+          <li class="nav-item"><a href="viewblog.php" class="nav-link">View Blogs</a></li>
+          <li class="nav-item"><a href="userlist.php" class="nav-link">User List</a></li>
         </ul>
       </header>
 
@@ -241,60 +241,60 @@
             <div class="col-md-12">
               <div class="card">
                 <div class="card-header">
-                  <h4 class="card-title">Add Project Details</h4>
+                  <h4 class="card-title">Add Bog Details</h4>
                 </div>
                 <form method="post" enctype="multipart/form-data">
                   <div class="card-body">
-                    <h5 class="card-title">Project Detail</h5>
+                    <h5 class="card-title mb-4 mt-1">Blog Detail</h5>
 
                     <div class="row">
-                      <div class="col-xl-12">
+
+                      <div class="form-group row mb-3">
+                        <label class="col-lg-1 col-form-label">Title</label>
+                        <div class="col-lg-11">
+                          <input type="text" class="form-control" name="title" required placeholder="Enter Title">
+                        </div>
+                      </div>
+
+                      <div class="form-group row mb-3">
+                        <label class="col-lg-1 col-form-label">Category</label>
+                        <div class="col-lg-11">
+                          <input type="text" class="form-control" name="title" required placeholder="Enter Catagory">
+                        </div>
+                      </div>
+
+                      <div class="form-group row mb-3">
+                        <label class="col-lg-1 col-form-label">Image</label>
+                        <div class="col-lg-11">
+                          <input class="form-control" name="aimage" type="file" required>
+                        </div>
+                      </div>
+
+                      <div class="form-group row mb-3">
+                        <label class="col-lg-1 col-form-label">Tags</label>
+                        <div class="col-lg-11">
+                          <input type="text" class="form-control" name="title" required placeholder="Eg. #Blog , #profession etc..">
+                        </div>
+                      </div>
+
+                      <div class="form-group row mb-3">
+                        <label class="col-lg-1 col-form-label">Excerpt</label>
+                        <div class="col-lg-11">
+                          <textarea class="form-control" placeholder="Sort summery of Blog post" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-12">                        
                         <div class="form-group row mb-3">
-                          <label class="col-lg-1 col-form-label">Name</label>
+                          <label class="col-lg-1 col-form-label">Content</label>
                           <div class="col-lg-11">
-                            <input type="text" class="form-control" name="title" required placeholder="Enter Your Name">
+                            <textarea class="tinymce form-control bg-dark" name="feature" rows="10" cols="30"></textarea>
                           </div>
                         </div>
-                        <div class="form-group row mb-3">
-                          <label class="col-lg-1 col-form-label">Type</label>
-                          <div class="col-lg-11">
-                            <input type="text" class="form-control" name="title" required placeholder="Enter Type">
-                          </div>
-                        </div>
-                        <div class="form-group row mb-3">
-                          <label class="col-lg-1 col-form-label">URL</label>
-                          <div class="col-lg-11">
-                            <input type="text" class="form-control" name="title" required placeholder="Enter URL">
-                          </div>
-                        </div>
-                        <div class="form-group row mb-3">
-                          <label class="col-lg-1 col-form-label">Github</label>
-                          <div class="col-lg-11">
-                            <input type="text" class="form-control" name="title" required placeholder="Enter Github link">
-                          </div>
-                        </div>
-                        <div class="form-group row mb-3">
-                          <label class="col-lg-1 col-form-label">Image</label>
-                          <div class="col-lg-11">
-                            <input class="form-control" name="aimage" type="file" required>
-                          </div>
-                        </div>
-                        <div class="form-group row mb-3">
-                          <label class="col-lg-1 col-form-label">Description</label>
-                          <div class="col-lg-11">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                          </div>
-                        </div>
-                        <div class="form-group row mb-3">
-                          <label class="col-lg-1 col-form-label">Technology</label>
-                          <div class="col-lg-11">
-                            <input type="text" class="form-control" name="title" required placeholder="Eg. Node.js , Unity 3D etc..">
-                          </div>
-                        </div>
-                        
                         <div class="w-100 d-flex justify-content-center mt-4 mb-2">
                           <input type="submit" value="Submit" class="btn btn-primary" name="add" style="width: 150px;">
                         </div>
+
                   </div>
                 </form>
               </div>
